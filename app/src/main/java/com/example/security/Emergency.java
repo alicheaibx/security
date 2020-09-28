@@ -28,7 +28,7 @@ public class Emergency extends AppCompatActivity {
 
     TextView username;
     TextView phone;
-    Button emergency;
+    Button sos;
     String fn;
     String pn;
     Spinner cases;
@@ -44,7 +44,7 @@ public class Emergency extends AppCompatActivity {
         r = Volley.newRequestQueue(this);
         username = findViewById(R.id.username);
         phone = findViewById(R.id.userphone);
-        emergency = findViewById(R.id.emergancy);
+        sos = findViewById(R.id.emergancy);
         fn = getIntent().getExtras().getString("name");
         pn = getIntent().getExtras().getString("phone");
         cases = findViewById(R.id.sos);
@@ -75,7 +75,7 @@ public class Emergency extends AppCompatActivity {
 
         });
         r.add(jsonObjectRequest);
-        emergency.setOnClickListener(new View.OnClickListener() {
+        sos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 emegency();
