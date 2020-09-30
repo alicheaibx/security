@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -24,11 +24,11 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Emergency extends AppCompatActivity {
-    static String URL_register = "http://localhost/security_db/notificationpath.php";
+    static String URL_register = "https://localhost/security_db/notificationpath.php";
 
     TextView username;
     TextView phone;
-    Button sos;
+    ImageButton sos;
     String fn;
     String pn;
     Spinner cases;
@@ -48,7 +48,7 @@ public class Emergency extends AppCompatActivity {
         fn = getIntent().getExtras().getString("name");
         pn = getIntent().getExtras().getString("phone");
         cases = findViewById(R.id.sos);
-        String Url_case = "http://127.0.0.1/security_db/case.php";
+        String Url_case = "https://127.0.0.1/security_db/case.php";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, Url_case, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
