@@ -24,7 +24,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Emergency extends AppCompatActivity {
-    static String URL_register = "http:8080//localhost/security_db/notificationpath.php";
+    static String URL_register = "http://127.0.0.1/security_db/notificationpath.php";
 
     TextView username;
     TextView phone;
