@@ -83,6 +83,11 @@ public class Emergency extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
     private void emegency() {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL_notifications, null, new Response.Listener<JSONObject>() {
             @Override
@@ -109,5 +114,6 @@ public class Emergency extends AppCompatActivity {
             }
 
         });
+
     }
 }
