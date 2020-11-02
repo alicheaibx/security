@@ -10,9 +10,10 @@
 
     <ImageView
         android:id="@+id/police"
-        android:layout_width="337dp"
-        android:layout_height="461dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:contentDescription="police officer with you"
+        android:scaleType="fitXY"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
