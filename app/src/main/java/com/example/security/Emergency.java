@@ -24,8 +24,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Emergency extends AppCompatActivity {
-    static String URL_notifications = "http://127.0.0.1/security_db/notificationpath.php";
-    static String URL_case = "http://127.0.0.1/security_db/case.php";
+    static String URL_notifications = "http://127.0.0.1:80/security_db/notificationpath.php";
+    static String URL_case = "http://127.0.0.1:80/security_db/case.php";
     TextView username;
     TextView phone;
     ImageButton sos;
